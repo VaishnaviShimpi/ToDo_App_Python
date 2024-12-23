@@ -1,3 +1,2 @@
-app.config["MONGO_URI"] = "mongodb+srv://shimpivaishnavi23:x5LLWA9tPbEB2L8I@cluster0.cj66t.mongodb.net/Flask_ToDoApp?retryWrites=true&w=majority&appName=Cluster0"
 flask
 flask-pymongo
