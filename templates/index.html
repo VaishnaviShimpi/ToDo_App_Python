@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Reminder App</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">To-Do Reminder App</h1>
+        <div class="form-container">
+            <input type="text" id="taskTitle" placeholder="Enter Task Title" />
+            <textarea id="taskDescription" placeholder="Enter Task Description"></textarea>
+            <button class="primary-btn" onclick="addTask()">Add Task</button>
+        </div>
+        <div class="task-list">
+            <h2>Your Tasks</h2>
+            <button class="danger-btn" onclick="deleteAllTasks()">Delete All Tasks</button>
+            <div id="taskContainer" class="task-container"></div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h2>Edit Task</h2>
+            <input type="text" id="editTaskTitle" placeholder="Task Title" />
+            <textarea id="editTaskDescription" placeholder="Task Description"></textarea>
+            <button class="primary-btn" onclick="updateTask()">Save Changes</button>
+            <button class="secondary-btn" onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
