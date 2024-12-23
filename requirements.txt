@@ -1,2 +1,4 @@
-flask
-flask-pymongo
+Flask
+gunicorn
+pymongo
+# any other dependencies
